@@ -421,25 +421,25 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <label>Имя <input type="text" class="form-input" name="user_name" /></label>
+          <label for="user-name">Имя</label>
+          <input type="text" class="form-input" name="user-name" id="user-name" />
 
-          <label>Телефон <input type="tel" class="form-input" name="user_tel" /></label>
+          <label for="user-tel">Телефон</label>
+          <input type="tel" class="form-input" name="user-tel" id="user-tel" />
 
-          <label>Почта <input type="email" class="form-input" name="user_email" /></label>
-          <label
-            >Комментарий
-            <textarea
-              name="feedback"
-              class="modal-text-area"
-              placeholder="Введите текст"
-            ></textarea>
-          </label>
-          <label>
-            <input type="checkbox" name="succses" class="succses" value="yes" />
-            Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
-          </label>
-
-          <button type="submit" class="">Отправить</button>
+          <label for="user-email">Почта</label>
+          <input type="email" class="form-input" name="user-email" id="user-email" />
+          <label for="feedback">Комментарий</label>
+          <textarea
+            name="feedback"
+            class="modal-text-area"
+            placeholder="Введите текст"
+            id="feedback"
+          ></textarea>
+          <label for="succses"></label>
+          <input type="checkbox" name="succses" id="succses" class="succses" value="yes" />
+          Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
+          <button type="submit" class="form-btn">Отправить</button>
         </form>
       </div>
     </div>
