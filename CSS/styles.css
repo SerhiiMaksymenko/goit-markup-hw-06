@@ -910,15 +910,28 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.policy-flex-container {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
 .succses {
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 
-  color: #757575;
+  color: var(--secondary-text-color);
+}
+.form-link {
 }
 
 .form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
   min-width: 200px;
 

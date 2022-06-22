@@ -436,9 +436,15 @@
             placeholder="Введите текст"
             id="feedback"
           ></textarea>
-          <label for="succses"></label>
-          <input type="checkbox" name="succses" id="succses" class="succses" value="yes" />
-          Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
+          <div class="policy-flex-container">
+            <input type="checkbox" name="succses" id="succses" value="yes" />
+
+            <label for="succses" class="succses"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="form-link">Условия договора</a></label
+            >
+          </div>
+
           <button type="submit" class="form-btn">Отправить</button>
         </form>
       </div>
