@@ -422,13 +422,26 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
           <label for="user-name">Имя</label>
-          <input type="text" class="form-input" name="user-name" id="user-name" />
-
+          <div class="icon-wrap">
+            <input type="text" class="form-input" name="user-name" id="user-name" />
+            <!-- <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg> -->
+          </div>
           <label for="user-tel">Телефон</label>
-          <input type="tel" class="form-input" name="user-tel" id="user-tel" />
-
+          <div class="icon-wrap">
+            <input type="tel" class="form-input" name="user-tel" id="user-tel" />
+            <!-- <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg> -->
+          </div>
           <label for="user-email">Почта</label>
-          <input type="email" class="form-input" name="user-email" id="user-email" />
+          <div class="icon-wrap">
+            <input type="email" class="form-input" name="user-email" id="user-email" />
+            <!-- <svg class="modal-icons" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg> -->
+          </div>
           <label for="feedback">Комментарий</label>
           <textarea
             name="feedback"
@@ -436,7 +449,7 @@
             placeholder="Введите текст"
             id="feedback"
           ></textarea>
-          <div class="policy-flex-container">
+          <div class="policy-container">
             <input type="checkbox" name="succses" id="succses" value="yes" />
 
             <label for="succses" class="succses"
@@ -444,7 +457,6 @@
               <a href="" class="form-link">Условия договора</a></label
             >
           </div>
-
           <button type="submit" class="form-btn">Отправить</button>
         </form>
       </div>

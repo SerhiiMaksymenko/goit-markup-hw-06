@@ -880,6 +880,7 @@ address {
 }
 
 .form-input {
+  position: relative;
   margin-bottom: 10px;
 
   width: 100%;
@@ -891,6 +892,7 @@ address {
 }
 
 .modal-text-area {
+  margin-bottom: 20px;
   padding: 12px 16px;
   width: 100%;
   height: 120px;
@@ -910,12 +912,6 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.policy-flex-container {
-  display: flex;
-  margin-bottom: 30px;
-  align-items: center;
-}
-
 .succses {
   width: 100%;
   font-size: 14px;
@@ -925,7 +921,9 @@ address {
 
   color: var(--secondary-text-color);
 }
-.form-link {
+
+.policy-container {
+  margin-bottom: 30px;
 }
 
 .form-btn {
