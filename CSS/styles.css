@@ -857,7 +857,6 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
-  outline: transparent;
 }
 
 .modal-btn:focus,
@@ -920,7 +919,13 @@ address {
   border-radius: 4px;
   background-color: transparent;
 
+  outline: transparent;
+
   resize: none;
+}
+
+.modal-text-area:focus {
+  border-color: var(--primary-background-color);
 }
 
 .modal-text-area::placeholder {
