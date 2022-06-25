@@ -961,7 +961,8 @@ address {
   margin-bottom: 30px;
 }
 
-.custom-icon {
+/* //////////кастомный чекбокс 1-ый вариант ////////////// */
+/* .custom-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -970,7 +971,17 @@ address {
 
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
-}
+} */
+
+/* .checkbox:checked + .succses span {
+  border: transparent;
+  background-color: var(--primary-background-color);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+} */
+
+/* /////////////кастомный чекбокс 2-ой вариант через СПРАЙТ//////// */
 
 .succses {
   display: flex;
@@ -984,12 +995,31 @@ address {
   color: var(--secondary-text-color);
 }
 
+.succses span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 15px;
+  height: 15px;
+
+  margin-right: 9px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.checked-icon {
+  fill: transparent;
+}
+
 .checkbox:checked + .succses span {
-  border: transparent;
   background-color: var(--primary-background-color);
-  background-image: url(../images/check.svg);
-  background-size: contain;
-  background-origin: border-box;
+  border: none;
+}
+
+.checkbox:checked + .succses .checked-icon {
+  fill: var(--accent-text-color);
 }
 
 .form-link {
